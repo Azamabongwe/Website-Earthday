@@ -1,0 +1,406 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Day Initiative</title>
+	 <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f4fff4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');
+            background-size:cover;
+            background-position:center;
+            height:100vh;
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:4rem;
+            margin-bottom:15px;
+        }
+
+        header p{
+            font-size:1.3rem;
+            max-width:700px;
+        }
+
+        nav{
+            background:#1b5e20;
+            padding:15px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+            flex-wrap:wrap;
+        }
+
+        nav ul li{
+            margin:10px 20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#c8e6c9;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        h2{
+            color:#1b5e20;
+            margin-bottom:20px;
+            font-size:2rem;
+        }
+
+        .card-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+            gap:25px;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .action-list li{
+            margin:15px 0;
+        }
+
+        footer{
+            background:#1b5e20;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        iframe{
+            width:100%;
+            height:400px;
+            border:none;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.5rem;
+            }
+
+            header p{
+                font-size:1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1>Earth Day Initiative</h1>
+        <p>
+            There is no Planet B,Invest in our Planet.Keep it Green,Keep it Clean.
+        </p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Earth Day</a></li>
+            <li><a href="#issues">Environmental Issues</a></li>
+            <li><a href="#action">Take Action</a></li>
+            <li><a href="#media">Media</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>
+            Earth Day is celebrated annually on April 22 to raise awareness 
+            about environmental protection and sustainability.
+            This website was created to educate people about environmental challenges 
+            and encourage everyone to take action for a healthier planet and better future.
+        </p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Earth Day</h2>
+
+        <p>
+            Earth Day, founded by Senator Gaylord Nelson, began in 1970, as a global movement focused on protecting the environment. The aim was to raise awareness on increasing amount of pollution, deforestation and climate change. It was held on the 22nd of April to maximize student participation and ensure a good weather for outdoor events. 
+            Millions of people around the world participate in activities such as tree planting, 
+            recycling campaigns, and clean-up events. This eventually led to the creation of the Environmental Protection Agency.
+        </p>
+
+        <br>
+
+        <p>
+            Today, Earth Day highlights major environmental challenges including climate change, 
+            pollution, deforestation, and biodiversity loss. The goal is to inspire people, 
+            communities, and governments to work together to protect the Earth.
+        </p>
+    </section>
+
+    <!-- ISSUES SECTION -->
+    <section id="issues">
+        <h2>Environmental Issues</h2>
+
+        <div class="card-container">
+
+            <!-- Climate Change -->
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.a3oRQV3Ell5JZLiFoOvftgHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Climate Change">
+
+                <div class="card-content">
+                    <h3>Climate Change</h3>
+
+                    <p>
+                        Climate change refers to long-term shifts in temperature 
+                        and weather patterns caused mainly by human activities.
+                    </p>
+
+                    <br>
+
+                    <strong>Causes:</strong>
+                    <ul>
+                        <li>Burning fossil fuels</li>
+                        <li>Industrial pollution</li>
+                        <li>Deforestation</li>
+						<li>Agriculture and live stock</li>
+					
+						
+                    </ul>
+
+                    <br>
+
+                    <strong>Effects:</strong>
+                    <ul>
+                        <li>Extreme weather conditions</li>
+                        <li>Rising sea levels</li>
+                        <li>Damage to ecosystems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Water Pollution -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Water Pollution">
+
+                <div class="card-content">
+                    <h3>Water Pollution</h3>
+
+                    <p>
+                        Water pollution occurs when harmful substances contaminate rivers, lakes, 
+                        and oceans, affecting both humans and wildlife.
+                    </p>
+
+                    <br>
+
+                    <strong>Causes:</strong>
+                    <ul>
+                        <li>Plastic waste</li>
+                        <li>Chemical dumping</li>
+                        <li>Oil spills</li>
+						<li>Agricultural runoffs</li>
+                    </ul>
+
+                    <br>
+
+                    <strong>Effects:</strong>
+                    <ul>
+                        <li>Unsafe drinking water</li>
+                        <li>Death of marine life</li>
+                        <li>Spread of diseases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Deforestation -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b" alt="Deforestation">
+
+                <div class="card-content">
+                    <h3>Deforestation</h3>
+
+                    <p>
+                        Deforestation is the large-scale removal of forests, 
+                        often for agriculture or urban development.
+                    </p>
+
+                    <br>
+
+                    <strong>Causes:</strong>
+                    <ul>
+                        <li>Logging</li>
+                        <li>Farming expansion</li>
+                        <li>Urbanization</li>
+                    </ul>
+
+                    <br>
+
+                    <strong>Effects:</strong>
+                    <ul>
+                        <li>Loss of wildlife habitats</li>
+                        <li>Increased carbon emissions</li>
+                        <li>Soil erosion</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- TAKE ACTION SECTION -->
+    <section id="action">
+        <h2>Take Action</h2>
+
+        <p>
+            Small actions can make a huge difference. Here are practical ways 
+            to live more sustainably:
+        </p>
+
+        <ul class="action-list">
+            <li>🌱 Plant trees and protect green spaces</li>
+            <li>♻ Reduce, reuse, and recycle waste</li>
+            <li>🚲 Use public transport, walk, or cycle</li>
+            <li>💧 Save water and electricity</li>
+            <li>🛍 Avoid single-use plastics</li>
+            <li>🌍 Join local environmental campaigns and clean-up events</li>
+        </ul>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section id="media">
+        <h2>Media & Awareness</h2>
+
+        <p>
+            Watch this short Earth Day awareness video and learn more about how 
+            we can protect the environment.
+        </p>
+
+        <iframe 
+            src="https://www.youtube.com/embed/QQYgCxu988s" 
+            title="Earth Day Video">
+        </iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Earth Day Initiative | Protecting the Planet Together
+        </p>
+		<p> <!-- ================= SOURCES SECTION ================= -->
+<section id="sources">
+    <div class="sources-container">
+
+        <h2>Sources & References</h2>
+
+        <p class="sources-text">
+            This website used educational information, environmental research,
+            and free media resources from the following trusted websites:
+        </p>
+
+        <div class="sources-cards">
+
+            <div class="source-card">
+                <h3>🌍 Earth Day</h3>
+                <a href="https://www.earthday.org/" target="_blank">
+                    www.earthday.org
+                </a>
+            </div>
+
+            <div class="source-card">
+                <h3>🌱 National Geographic</h3>
+                <a href="https://www.nationalgeographic.com/environment/" target="_blank">
+                    nationalgeographic.com
+                </a>
+            </div>
+
+            <div class="source-card">
+                <h3>🌎 United Nations</h3>
+                <a href="https://www.un.org/en/climatechange" target="_blank">
+                    un.org/climatechange
+                </a>
+            </div>
+
+            <div class="source-card">
+                <h3>🐼 WWF</h3>
+                <a href="https://www.worldwildlife.org/" target="_blank">
+                    worldwildlife.org
+                </a>
+            </div>
+
+            <div class="source-card">
+                <h3>📸 Unsplash Images</h3>
+                <a href="https://unsplash.com/" target="_blank">
+                    unsplash.com
+                </a>
+            </div>
+
+            <div class="source-card">
+                <h3>🎥 YouTube Video</h3>
+                <a href="https://www.youtube.com/" target="_blank">
+                    youtube.com
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+</p>
+    </footer>
+
+</body>
+	</html>
